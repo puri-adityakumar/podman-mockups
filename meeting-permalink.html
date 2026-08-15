@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Proposed Podman meeting permalink page design mockup." />
+    <title>Proposed Meeting Permalink · Podman LFX Mockup</title>
+    <link rel="icon" href="../../../podman.io/static/favicon.ico" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to meeting notes</a>
+    <div class="site-shell">
+      <div class="proposal-bar"><span>Proposed design · LFX core · Not implemented</span><a href="index.html">Back to mockup gallery</a></div>
+      <header class="podman-nav">
+        <a class="brand" href="index.html" aria-label="Podman mockup gallery"><img src="../../../podman.io/static/logos/optimized/podman-3-logo-266w-253h.webp" alt="" /><span>podman</span></a>
+        <nav class="nav-items" aria-label="Podman preview navigation"><span class="nav-item">Features</span><span class="nav-item">Get Started</span><span class="nav-item active">Community</span><span class="nav-item">Development Blog</span><span class="nav-item">Documentation</span><span class="nav-item">GitHub</span></nav>
+        <span class="theme-toggle" aria-hidden="true">◐</span>
+      </header>
+
+      <main id="main" class="screen-content">
+        <div class="breadcrumb" aria-label="Breadcrumb"><span>Community</span><span>Meeting minutes</span><span>August 4, 2026</span></div>
+        <div class="chips"><span class="scope-chip core">LFX core</span><span class="status-chip proposed">Proposed permalink</span><span class="chip">Community meeting</span></div>
+        <p class="eyebrow" style="margin-top: 20px">Meeting record</p>
+        <h1>Podman Community Meeting</h1>
+        <p class="lede">A stable, shareable page for the recording, agenda, decisions, links, and full meeting notes.</p>
+
+        <div class="meta-row" style="margin: 22px 0 36px">
+          <span class="chip">August 4, 2026</span><span class="chip">11:00–12:00 ET</span><span class="chip">60 minutes</span><span class="status-chip ready">Recording available</span>
+        </div>
+
+        <div class="meeting-layout">
+          <article>
+            <section aria-labelledby="recording-title">
+              <div class="section-heading"><div><p class="eyebrow">Recording</p><h2 id="recording-title">Watch the full meeting</h2></div><button class="secondary" type="button">Open on YouTube</button></div>
+              <div class="video-player" role="img" aria-label="Proposed embedded Podman community meeting video"><span class="play" aria-hidden="true">▶</span></div>
+              <div class="video-caption"><span>Captions and transcript available</span><span>Recording linked from meeting metadata</span></div>
+            </section>
+
+            <section class="section" aria-labelledby="summary-title">
+              <div class="section-heading"><div><p class="eyebrow">At a glance</p><h2 id="summary-title">Summary and decisions</h2></div><span class="status-chip ready">3 decisions recorded</span></div>
+              <div class="grid-3">
+                <article class="card blue-top"><h3>Release planning</h3><p>Reviewed the next stable release milestones and owners.</p></article>
+                <article class="card blue-top"><h3>Website updates</h3><p>Agreed to separate meeting notes into shareable pages.</p></article>
+                <article class="card blue-top"><h3>Community follow-up</h3><p>Collected action items with owners and due dates.</p></article>
+              </div>
+            </section>
+
+            <section class="section" aria-labelledby="agenda-title">
+              <div class="section-heading"><div><p class="eyebrow">Chapters</p><h2 id="agenda-title">Agenda and notes</h2><p>Timestamps connect each written topic to the recording.</p></div></div>
+              <div class="agenda-item"><div class="agenda-time">00:00</div><div><h3>Welcome and agenda</h3><p>Introductions, announcements, and additions to the published agenda.</p><div class="chips"><span class="chip">Announcement</span><span class="chip">Community</span></div></div></div>
+              <div class="agenda-item"><div class="agenda-time">08:20</div><div><h3>Release status</h3><p>Maintainers reviewed open blockers, documentation readiness, and testing status.</p><ul><li>Action: confirm release-note ownership.</li><li>Decision: keep the current milestone date.</li></ul></div></div>
+              <div class="agenda-item"><div class="agenda-time">24:45</div><div><h3>Website and documentation</h3><p>Discussion of discoverability, meeting URLs, and documentation entry points.</p><ul><li>Action: prototype the meeting permalink content model.</li><li>Follow-up: confirm canonical documentation ownership.</li></ul></div></div>
+              <div class="agenda-item"><div class="agenda-time">48:10</div><div><h3>Open floor</h3><p>Community questions, project demos, and the next meeting date.</p></div></div>
+            </section>
+          </article>
+
+          <aside class="side-panel" aria-label="Meeting utilities">
+            <section class="card blue-top"><h3>Share this meeting</h3><p class="fine-print">Proposed stable URL</p><div class="code-block">podman.io/community/meetings/2026-08-04</div><div class="actions"><button type="button">Copy link</button></div></section>
+            <section class="card"><h3>Resources</h3><div class="option-list"><div class="option-row" style="grid-template-columns: 1fr auto"><span>Full transcript</span><button class="secondary" type="button">Open</button></div><div class="option-row" style="grid-template-columns: 1fr auto"><span>Meeting agenda</span><button class="secondary" type="button">Open</button></div><div class="option-row" style="grid-template-columns: 1fr auto"><span>Referenced slides</span><button class="secondary" type="button">Open</button></div></div></section>
+            <section class="card soft"><h3>Meeting navigation</h3><p><strong>Previous:</strong><br />July 21, 2026</p><p><strong>Next:</strong><br />August 18, 2026</p><button class="quiet" type="button">Browse all meetings</button></section>
+            <section class="card soft"><h3>Join the next call</h3><p>Calendar, Matrix, and participation guidance stay visible beside every record.</p><button class="secondary" type="button">Add to calendar</button></section>
+          </aside>
+        </div>
+      </main>
+      <footer class="site-footer"><div class="footer-grid"><div><strong>Docs</strong><span>Installation Instructions</span><span>Documentation</span><span>Podman CLI Commands</span></div><div><strong>Community</strong><span>Matrix</span><span>Discord</span><span>Blog</span></div><div><strong>Projects</strong><span>Podman GitHub</span><span>Podman Desktop</span><span>Podman Website GitHub</span></div></div><p class="footer-note">Proposed Podman meeting permalink · Design reference only · Content is illustrative.</p></footer>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Proposed Podman downloads page design mockup." />
+    <title>Proposed Downloads · Podman LFX Mockup</title>
+    <link rel="icon" href="../../../podman.io/static/favicon.ico" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to downloads</a>
+    <div class="site-shell">
+      <div class="proposal-bar"><span>Proposed design · LFX core · Not implemented</span><a href="index.html">Back to mockup gallery</a></div>
+      <header class="podman-nav">
+        <a class="brand" href="index.html" aria-label="Podman mockup gallery"><img src="../../../podman.io/static/logos/optimized/podman-3-logo-266w-253h.webp" alt="" /><span>podman</span></a>
+        <nav class="nav-items" aria-label="Podman preview navigation">
+          <span class="nav-item">Features</span><span class="nav-item">Get Started</span><span class="nav-item">Community</span><span class="nav-item">Development Blog</span><span class="nav-item">Documentation</span><span class="nav-item active">Downloads</span>
+        </nav>
+        <span class="theme-toggle" aria-hidden="true">◐</span>
+      </header>
+
+      <main id="main" class="screen-content">
+        <section class="hero-grid" aria-labelledby="page-title">
+          <div>
+            <div class="chips"><span class="scope-chip core">LFX core</span><span class="status-chip proposed">Prototype state</span></div>
+            <p class="eyebrow" style="margin-top: 18px">Podman CLI + Podman Desktop</p>
+            <h1 id="page-title">Download Podman</h1>
+            <p class="lede">Choose the experience and architecture that match your machine. Every supported option stays visible; detection only highlights a recommendation.</p>
+            <div class="actions"><a class="button" href="#download-options">View recommended downloads</a><a class="button secondary" href="#all-downloads">Compare every platform</a></div>
+          </div>
+          <aside class="hero-panel" aria-label="Detected platform recommendation">
+            <div class="chips"><span class="status-chip recommended">Recommended</span><span class="chip">Detected locally</span></div>
+            <h2 style="margin-top: 16px">macOS · Apple silicon</h2>
+            <p>Two clear choices: a complete desktop experience or the standalone command line.</p>
+            <div class="grid-2">
+              <div class="stat"><strong>Desktop</strong><span>Universal application package</span></div>
+              <div class="stat"><strong>CLI</strong><span>ARM64 command-line package</span></div>
+            </div>
+            <p class="fine-print" style="margin-top: 14px">Prototype recommendation only. No download begins from this design file.</p>
+          </aside>
+        </section>
+
+        <section id="download-options" class="section" aria-labelledby="recommended-title">
+          <div class="section-heading">
+            <div><p class="eyebrow">Your platform</p><h2 id="recommended-title">Recommended downloads</h2><p>Detection highlights a likely fit while keeping the complete catalog one step away.</p></div>
+            <div class="segmented" aria-label="Platform preview selector"><button class="segment active" type="button">macOS</button><button class="segment" type="button">Windows</button><button class="segment" type="button">Linux</button><button class="segment" type="button">Other</button></div>
+          </div>
+
+          <div class="grid-2">
+            <article class="card blue-top download-card">
+              <div class="product-mark" aria-hidden="true">D</div>
+              <div>
+                <div class="chips"><span class="status-chip recommended">Recommended</span><span class="chip">Latest stable</span></div>
+                <h3 style="margin-top: 12px">Podman Desktop</h3>
+                <p>Containers, images, Kubernetes workflows, and extensions in a graphical desktop application.</p>
+                <div class="option-list">
+                  <div class="option-row"><strong>Universal</strong><small>Apple + Intel</small><small>Application package</small><button type="button">Download .dmg</button></div>
+                </div>
+                <div class="actions"><button class="secondary" type="button">Release notes</button><button class="quiet" type="button">Verify checksum</button></div>
+              </div>
+            </article>
+
+            <article class="card blue-top download-card">
+              <div class="product-mark" aria-hidden="true">&gt;_</div>
+              <div>
+                <div class="chips"><span class="status-chip recommended">Recommended</span><span class="chip">Latest stable</span></div>
+                <h3 style="margin-top: 12px">Podman CLI</h3>
+                <p>A daemonless container engine for scripts, terminals, CI, and local development.</p>
+                <div class="option-list">
+                  <div class="option-row"><strong>ARM64</strong><small>Apple silicon</small><small>Command line</small><button type="button">Download package</button></div>
+                  <div class="option-row"><strong>AMD64</strong><small>Intel Mac</small><small>Command line</small><button class="secondary" type="button">Download package</button></div>
+                </div>
+                <div class="actions"><button class="secondary" type="button">Install with Homebrew</button><button class="quiet" type="button">Verify checksum</button></div>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section id="all-downloads" class="section" aria-labelledby="catalog-title">
+          <div class="section-heading"><div><p class="eyebrow">Complete catalog</p><h2 id="catalog-title">All platforms and architectures</h2><p>No supported choice is hidden behind user-agent detection.</p></div><span class="status-chip proposed">Proposed information architecture</span></div>
+          <div class="filter-row" aria-label="Catalog filters">
+            <div class="field" style="min-width: 190px"><label for="product">Product</label><select id="product"><option>All products</option><option>Podman Desktop</option><option>Podman CLI</option></select></div>
+            <div class="field" style="min-width: 190px"><label for="platform">Platform</label><select id="platform"><option>All platforms</option><option>macOS</option><option>Windows</option><option>Linux</option></select></div>
+            <div class="field" style="min-width: 190px"><label for="architecture">Architecture</label><select id="architecture"><option>All architectures</option><option>ARM64</option><option>AMD64</option></select></div>
+          </div>
+
+          <div class="option-list" aria-label="All download options">
+            <div class="option-row"><strong>Podman Desktop</strong><span>Windows · AMD64</span><small>Installer · Latest stable</small><button type="button">Download</button></div>
+            <div class="option-row"><strong>Podman CLI</strong><span>Windows · AMD64</span><small>Package · Latest stable</small><button class="secondary" type="button">Download</button></div>
+            <div class="option-row"><strong>Podman Desktop</strong><span>macOS · Universal</span><small>DMG · Latest stable</small><button class="secondary" type="button">Download</button></div>
+            <div class="option-row"><strong>Podman CLI</strong><span>Linux · ARM64/AMD64</span><small>Distribution packages</small><button class="secondary" type="button">View packages</button></div>
+          </div>
+        </section>
+
+        <section class="section grid-3" aria-label="Download support information">
+          <article class="card soft"><h3>Verify your download</h3><p>Checksums and signatures sit beside every artifact, with a short verification recipe.</p></article>
+          <article class="card soft"><h3>System requirements</h3><p>Platform, architecture, virtualization, and support notes appear before installation.</p></article>
+          <article class="card soft"><h3>Need an older release?</h3><p>A stable archive keeps previous artifacts discoverable without cluttering the primary path.</p></article>
+        </section>
+      </main>
+      <footer class="site-footer"><div class="footer-grid"><div><strong>Docs</strong><span>Installation Instructions</span><span>Documentation</span><span>Podman CLI Commands</span></div><div><strong>Community</strong><span>Matrix</span><span>Discord</span><span>Blog</span></div><div><strong>Projects</strong><span>Podman GitHub</span><span>Podman Desktop</span><span>Podman Website GitHub</span></div></div><p class="footer-note">Proposed Podman downloads experience · Design reference only · No files are downloaded from this mockup.</p></footer>
+    </div>
+  </body>
+</html>

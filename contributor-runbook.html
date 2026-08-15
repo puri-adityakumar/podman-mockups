@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Proposed Podman contributor website-update runbook UI mockup." />
+    <title>Proposed Contributor Runbook · Podman LFX Mockup</title>
+    <link rel="icon" href="../../../podman.io/static/favicon.ico" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to update workflow</a>
+    <div class="site-shell">
+      <div class="proposal-bar"><span>Proposed design · LFX bonus · Not implemented</span><a href="index.html">Back to mockup gallery</a></div>
+      <header class="podman-nav">
+        <a class="brand" href="index.html" aria-label="Podman mockup gallery"><img src="../../../podman.io/static/logos/optimized/podman-3-logo-266w-253h.webp" alt="" /><span>podman</span></a>
+        <nav class="nav-items" aria-label="Podman contributor preview navigation"><span class="nav-item active">Update guide</span><span class="nav-item">Content map</span><span class="nav-item">Validation</span><span class="nav-item">Deployment</span><span class="nav-item">Get help</span></nav>
+        <span class="theme-toggle" aria-hidden="true">◐</span>
+      </header>
+
+      <main id="main" class="screen-content">
+        <div class="chips"><span class="scope-chip bonus">LFX bonus</span><span class="status-chip proposed">Guided workflow prototype</span></div>
+        <p class="eyebrow" style="margin-top: 18px">Podman website contributor center</p>
+        <h1>Make a safe website update</h1>
+        <p class="lede">Choose the change, follow the exact repository path, run the right checks, preview the result, and prepare a human-written handoff.</p>
+
+        <section class="section" aria-labelledby="update-type-title">
+          <div class="section-heading"><div><p class="eyebrow">Step 1</p><h2 id="update-type-title">What are you updating?</h2><p>The selected recipe changes the files, required fields, and validation checklist.</p></div><span class="status-chip recommended">Downloads selected</span></div>
+          <div class="grid-4">
+            <article class="card blue-top"><div class="product-mark" aria-hidden="true">↓</div><h3 style="margin-top: 14px">Download release</h3><p>Version, artifacts, architectures, checksums, and release notes.</p><button type="button">Use this recipe</button></article>
+            <article class="card"><div class="product-mark" aria-hidden="true">M</div><h3 style="margin-top: 14px">Meeting record</h3><p>Date, type, recording, summary, topics, and resources.</p><button class="secondary" type="button">Use this recipe</button></article>
+            <article class="card"><div class="product-mark" aria-hidden="true">B</div><h3 style="margin-top: 14px">Blog style/content</h3><p>Scoped prose styles, metadata, images, headings, and feeds.</p><button class="secondary" type="button">Use this recipe</button></article>
+            <article class="card"><div class="product-mark" aria-hidden="true">UI</div><h3 style="margin-top: 14px">Page or component</h3><p>Routes, responsive states, accessibility, and browser checks.</p><button class="secondary" type="button">Use this recipe</button></article>
+          </div>
+        </section>
+
+        <section class="section" aria-labelledby="workflow-title">
+          <div class="section-heading"><div><p class="eyebrow">Guided recipe</p><h2 id="workflow-title">Update a download release</h2><p>Every path and command is generated from the actual repository structure.</p></div><span class="status-chip proposed">Illustrative data</span></div>
+          <div class="runbook-layout">
+            <nav class="step-list" aria-label="Update workflow steps">
+              <div class="step done"><span class="step-index">✓</span><span>Choose update type</span></div>
+              <div class="step active"><span class="step-index">2</span><span>Edit release data</span></div>
+              <div class="step"><span class="step-index">3</span><span>Validate artifacts</span></div>
+              <div class="step"><span class="step-index">4</span><span>Preview pages</span></div>
+              <div class="step"><span class="step-index">5</span><span>Run quality checks</span></div>
+              <div class="step"><span class="step-index">6</span><span>Prepare handoff</span></div>
+            </nav>
+
+            <div>
+              <article class="card blue-top">
+                <div class="section-heading"><div><h3>Release metadata</h3><p>One typed source powers both the homepage recommendation and full downloads page.</p></div><span class="chip">Step 2 of 6</span></div>
+                <div class="grid-2">
+                  <div class="field"><label for="release-version">Release label</label><input id="release-version" value="Latest stable" /></div>
+                  <div class="field"><label for="release-date">Release date</label><input id="release-date" type="date" value="2026-08-04" /></div>
+                  <div class="field"><label for="release-product">Product</label><select id="release-product"><option>Podman CLI</option><option>Podman Desktop</option></select></div>
+                  <div class="field"><label for="release-platform">Platform</label><select id="release-platform"><option>macOS</option><option>Windows</option><option>Linux</option></select></div>
+                  <div class="field"><label for="release-arch">Architecture</label><select id="release-arch"><option>ARM64</option><option>AMD64</option><option>Universal</option></select></div>
+                  <div class="field"><label for="release-format">Package format</label><select id="release-format"><option>Installer</option><option>Archive</option><option>Distribution package</option></select></div>
+                </div>
+                <div class="field" style="margin-top: 16px"><label for="artifact-url">Direct artifact URL</label><input id="artifact-url" value="https://example.invalid/prototype-artifact" /></div>
+                <div class="field" style="margin-top: 16px"><label for="checksum">Checksum</label><textarea id="checksum">Prototype checksum value</textarea></div>
+                <div class="actions"><button type="button">Save prototype step</button><button class="secondary" type="button">Preview download card</button></div>
+              </article>
+
+              <article class="card soft" style="margin-top: 18px">
+                <div class="section-heading"><div><h3>Required validation</h3><p>The contributor sees what must pass before opening a pull request.</p></div><span class="status-chip ready">4 of 6 ready</span></div>
+                <div class="validation-list">
+                  <div class="validation-item"><span class="check-mark">✓</span><span>Required metadata fields present</span><span class="status-chip ready">Pass</span></div>
+                  <div class="validation-item"><span class="check-mark">✓</span><span>Platform + architecture combination recognized</span><span class="status-chip ready">Pass</span></div>
+                  <div class="validation-item"><span class="check-mark">✓</span><span>Homepage and downloads page use the same source</span><span class="status-chip ready">Pass</span></div>
+                  <div class="validation-item"><span class="check-mark">✓</span><span>Mobile card preview has no overflow</span><span class="status-chip ready">Pass</span></div>
+                  <div class="validation-item"><span class="step-index">!</span><span>Artifact URL responds and filename matches metadata</span><span class="status-chip proposed">Pending</span></div>
+                  <div class="validation-item"><span class="step-index">!</span><span>Checksum matches downloaded artifact</span><span class="status-chip proposed">Pending</span></div>
+                </div>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section class="section grid-3" aria-label="Contributor support information">
+          <article class="card soft"><h3>Actual repository paths</h3><p>Each recipe links to current files rather than stale or misspelled README paths.</p></article>
+          <article class="card soft"><h3>Checks before handoff</h3><p>Typecheck, non-mutating lint, build, route/link/feed checks, and browser preview.</p></article>
+          <article class="card soft"><h3>Human-written communication</h3><p>The interface can show facts and evidence, but the contributor writes the issue or PR text.</p></article>
+        </section>
+      </main>
+      <footer class="site-footer"><div class="footer-grid"><div><strong>Docs</strong><span>Installation Instructions</span><span>Documentation</span><span>Podman CLI Commands</span></div><div><strong>Community</strong><span>Matrix</span><span>Discord</span><span>Blog</span></div><div><strong>Projects</strong><span>Podman GitHub</span><span>Podman Desktop</span><span>Podman Website GitHub</span></div></div><p class="footer-note">Proposed Podman contributor-update flow · Design reference only · This form does not save, validate, or publish data.</p></footer>
+    </div>
+  </body>
+</html>
