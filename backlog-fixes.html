@@ -11,65 +11,186 @@
   <body>
     <a class="skip-link" href="#main">Skip to community content</a>
     <div class="site-shell">
-      <div class="proposal-bar"><span>Proposed design · LFX core backlog · Not implemented</span><a href="index.html">Back to mockup gallery</a></div>
+      <div class="proposal-bar">
+        <span>Proposed design · LFX core backlog · Not implemented</span>
+        <a href="index.html">Back to mockup gallery</a>
+      </div>
       <header class="podman-nav">
-        <a class="brand" href="index.html" aria-label="Podman mockup gallery"><img src="../../../podman.io/static/logos/optimized/podman-3-logo-266w-253h.webp" alt="" /><span>podman</span></a>
-        <nav class="nav-items" aria-label="Podman preview navigation"><span class="nav-item">Features</span><span class="nav-item">Get Started</span><span class="nav-item active">Community</span><span class="nav-item">Development Blog</span><span class="nav-item">Documentation</span><span class="nav-item">GitHub</span></nav>
+        <a class="brand" href="index.html" aria-label="Podman mockup gallery">
+          <img src="../../../podman.io/static/logos/optimized/podman-3-logo-266w-253h.webp" alt="" />
+          <span>podman</span>
+        </a>
+        <nav class="nav-items" aria-label="Podman preview navigation">
+          <a class="nav-item" href="#main">Features</a>
+          <a class="nav-item" href="#main">Get Started</a>
+          <a class="nav-item active" href="#main" aria-current="page">Community</a>
+          <a class="nav-item" href="blog-presentation.html">Development Blog</a>
+          <a class="nav-item" href="unified-docs.html">Documentation</a>
+          <a class="nav-item" href="#main">GitHub</a>
+        </nav>
         <span class="theme-toggle" aria-hidden="true">◐</span>
       </header>
 
       <main id="main" class="screen-content">
+        <div class="breadcrumb" aria-label="Breadcrumb">
+          <span>Home</span>
+          <span>Community</span>
+        </div>
         <section class="hero-grid" aria-labelledby="community-title">
           <div>
-            <div class="chips"><span class="scope-chip core">LFX core backlog</span><span class="status-chip proposed">Proposed fixed state</span></div>
-            <p class="eyebrow" style="margin-top: 18px">Open source community</p>
+            <div class="chips">
+              <span class="scope-chip core">LFX core backlog</span>
+              <span class="status-chip proposed">Not implemented</span>
+            </div>
+            <p class="eyebrow eyebrow-after-chips">Open source community</p>
             <h1 id="community-title">Build Podman with us</h1>
-            <p class="lede">A responsive community page with clear destinations, shareable meeting links, and media that never depends on silent autoplay.</p>
-            <div class="actions"><a class="button" href="#meetings">Browse meeting notes</a><a class="button secondary" href="#demo">Watch a feature demo</a></div>
+            <p class="lede">
+              Responsive community cards, real destinations, shareable meeting links, and media that
+              never depends on silent autoplay.
+            </p>
+            <div class="actions">
+              <a class="button" href="#meetings">Browse meeting notes</a>
+              <a class="button secondary" href="#demo">Watch a feature demo</a>
+            </div>
           </div>
-          <aside class="hero-panel">
+          <aside class="hero-panel" aria-label="Current participation channels">
             <p class="eyebrow">Current participation</p>
-            <div class="grid-2"><div class="stat"><strong>Matrix</strong><span>Project chat and questions</span></div><div class="stat"><strong>Discord</strong><span>Community conversation</span></div><div class="stat"><strong>Mailing list</strong><span>Announcements and threads</span></div><div class="stat"><strong>GitHub</strong><span>Issues and pull requests</span></div></div>
+            <div class="grid-2">
+              <div class="stat"><strong>Matrix</strong><span>#podman:fedoraproject.org</span></div>
+              <div class="stat"><strong>Discord</strong><span>Containers community server</span></div>
+              <div class="stat"><strong>Mailing list</strong><span>podman@lists.podman.io</span></div>
+              <div class="stat"><strong>GitHub</strong><span>Issues and pull requests</span></div>
+            </div>
           </aside>
         </section>
 
         <section class="section" aria-labelledby="join-title">
-          <div class="section-heading"><div><p class="eyebrow">Choose a path</p><h2 id="join-title">Join the community</h2><p>Each card has one explicit destination instead of an empty or mismatched link.</p></div><span class="status-chip ready">Responsive card grid</span></div>
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">Choose a path</p>
+              <h2 id="join-title">Join the community</h2>
+              <p>Each card names one destination. Labels match the place they open.</p>
+            </div>
+            <span class="status-chip ready">Responsive card grid</span>
+          </div>
           <div class="grid-3">
-            <article class="card blue-top"><div class="product-mark" aria-hidden="true">#</div><h3 style="margin-top: 14px">Chat with contributors</h3><p>Ask usage and development questions in the listed Podman channels.</p><button type="button">Open chat options</button></article>
-            <article class="card blue-top"><div class="product-mark" aria-hidden="true">PR</div><h3 style="margin-top: 14px">Contribute code or docs</h3><p>Start with contribution guidance, issue labels, and pull-request expectations.</p><button type="button">Contribution details</button></article>
-            <article class="card blue-top"><div class="product-mark" aria-hidden="true">@</div><h3 style="margin-top: 14px">Follow announcements</h3><p>Subscribe to the mailing list and current canonical RSS feed.</p><button type="button">Subscription options</button></article>
+            <article class="card blue-top">
+              <div class="product-mark" aria-hidden="true">#</div>
+              <h3 class="card-lead">Chat with contributors</h3>
+              <p>Ask usage and development questions in Matrix or Discord.</p>
+              <div class="actions">
+                <button type="button">Open Matrix</button>
+                <button class="secondary" type="button">Open Discord</button>
+              </div>
+            </article>
+            <article class="card blue-top">
+              <div class="product-mark" aria-hidden="true">PR</div>
+              <h3 class="card-lead">Contribute code or docs</h3>
+              <p>Start from contribution guidance, issue labels, and PR expectations.</p>
+              <a class="button" href="contributor-runbook.html">Contribution details</a>
+            </article>
+            <article class="card blue-top">
+              <div class="product-mark" aria-hidden="true">@</div>
+              <h3 class="card-lead">Follow announcements</h3>
+              <p>Subscribe to the mailing list or the current canonical RSS feed.</p>
+              <div class="actions">
+                <button type="button">Mailing list</button>
+                <button class="secondary" type="button">RSS feed</button>
+              </div>
+            </article>
           </div>
         </section>
 
         <section id="meetings" class="section" aria-labelledby="meetings-title">
-          <div class="section-heading"><div><p class="eyebrow">Meeting archive</p><h2 id="meetings-title">Recent meetings</h2><p>Cards wrap naturally on small screens and lead to real permalink pages.</p></div><button class="secondary" type="button">Browse all meeting notes</button></div>
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">Meeting archive</p>
+              <h2 id="meetings-title">Recent meetings</h2>
+              <p>Cards wrap on small screens and open dated permalink pages.</p>
+            </div>
+            <a class="button secondary" href="meeting-permalink.html">Browse all meeting notes</a>
+          </div>
           <div class="grid-3">
-            <article class="card purple-top"><div class="chips"><span class="chip">Community</span><span class="status-chip ready">Recording</span></div><h3 style="margin-top: 14px">August 4, 2026</h3><p>Release planning, website updates, and community follow-up.</p><button type="button">Open meeting page</button></article>
-            <article class="card purple-top"><div class="chips"><span class="chip">Community</span><span class="status-chip ready">Notes</span></div><h3 style="margin-top: 14px">July 21, 2026</h3><p>Testing status, documentation, and contributor questions.</p><button class="secondary" type="button">Open meeting page</button></article>
-            <article class="card purple-top"><div class="chips"><span class="chip">Standup</span><span class="status-chip ready">Notes</span></div><h3 style="margin-top: 14px">July 16, 2026</h3><p>Short status notes with owners and links to active work.</p><button class="secondary" type="button">Open meeting page</button></article>
+            <article class="card purple-top">
+              <div class="chips"><span class="chip">Community</span><span class="status-chip ready">Recording</span></div>
+              <h3 class="card-lead"><time datetime="2026-08-04">August 4, 2026</time></h3>
+              <p>Release planning, website updates, and community follow-up.</p>
+              <a class="button" href="meeting-permalink.html">Open meeting page</a>
+            </article>
+            <article class="card purple-top">
+              <div class="chips"><span class="chip">Community</span><span class="status-chip ready">Notes</span></div>
+              <h3 class="card-lead"><time datetime="2026-07-21">July 21, 2026</time></h3>
+              <p>Testing status, documentation, and contributor questions.</p>
+              <a class="button secondary" href="meeting-permalink.html">Open meeting page</a>
+            </article>
+            <article class="card purple-top">
+              <div class="chips"><span class="chip">Standup</span><span class="status-chip ready">Notes</span></div>
+              <h3 class="card-lead"><time datetime="2026-07-16">July 16, 2026</time></h3>
+              <p>Short status notes with owners and links to active work.</p>
+              <a class="button secondary" href="meeting-permalink.html">Open meeting page</a>
+            </article>
           </div>
         </section>
 
         <section id="demo" class="section" aria-labelledby="demo-title">
-          <div class="section-heading"><div><p class="eyebrow">Feature demo</p><h2 id="demo-title">Watch on your terms</h2><p>Explicit playback, poster state, captions, transcript, and reduced-motion-safe presentation replace unreliable autoplay.</p></div><span class="status-chip ready">Controls visible</span></div>
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">Feature demo</p>
+              <h2 id="demo-title">Watch on your terms</h2>
+              <p>Explicit play, poster, captions, transcript, and reduced-motion-safe presentation. No silent autoplay.</p>
+            </div>
+            <span class="status-chip ready">Controls visible</span>
+          </div>
           <div class="video-layout">
             <div>
-              <div class="video-player" role="img" aria-label="Proposed Podman feature demo with an explicit play control"><span class="play" aria-hidden="true">▶</span></div>
-              <div class="video-caption"><span>Captions: English</span><span>Duration: 2:14 · Audio off until played</span></div>
+              <div class="video-player" role="img" aria-label="Proposed Podman feature demo with an explicit play control">
+                <span class="play" aria-hidden="true">▶</span>
+              </div>
+              <div class="video-caption">
+                <span>Captions: English</span>
+                <span>Duration: 2:14 · Audio off until played</span>
+              </div>
             </div>
-            <aside class="card blue-top"><h3>Podman command-line workflow</h3><p>A short demo of finding an image, starting a container, and checking its status.</p><div class="actions"><button type="button">Play demo</button><button class="secondary" type="button">Read transcript</button></div><p class="fine-print" style="margin-top: 14px">The mockup does not play media. It demonstrates the intended accessible state.</p></aside>
+            <aside class="card blue-top">
+              <h3>Podman command-line workflow</h3>
+              <p>Find an image, start a container, check status. Transcript stays next to the player.</p>
+              <p class="fine-print">0:18 Find an image · 0:54 Start a container · 1:32 Check status</p>
+              <div class="actions">
+                <button type="button">Play demo</button>
+                <button class="secondary" type="button">Read transcript</button>
+              </div>
+              <p class="fine-print card-follow">This mockup does not play media. It shows the intended accessible state.</p>
+            </aside>
           </div>
         </section>
 
         <section class="section grid-4" aria-label="Other proposed backlog corrections">
-          <article class="card soft"><h3>Correct destinations</h3><p>Labels match their Matrix, Discord, mailing-list, IRC, or GitHub target.</p></article>
-          <article class="card soft"><h3>Canonical RSS</h3><p>Current feed and archive feeds are clearly identified.</p></article>
-          <article class="card soft"><h3>Flexible carousel</h3><p>Item count and keyboard behavior derive from the actual content.</p></article>
-          <article class="card soft"><h3>Live time</h3><p>Meeting time uses semantic date/time markup and refreshes predictably.</p></article>
+          <article class="card soft">
+            <h3>Correct destinations</h3>
+            <p>Matrix, Discord, mailing list, IRC, and GitHub labels match their real targets.</p>
+          </article>
+          <article class="card soft">
+            <h3>Canonical RSS</h3>
+            <p>Current feed and archive feeds are named separately so subscriptions stay valid.</p>
+          </article>
+          <article class="card soft">
+            <h3>Flexible carousel</h3>
+            <p>Item count and keyboard behavior come from actual content, not a fixed slide count.</p>
+          </article>
+          <article class="card soft">
+            <h3>Live time</h3>
+            <p>Meeting time uses <code class="inline-code">&lt;time&gt;</code> and refreshes on a predictable interval.</p>
+          </article>
         </section>
       </main>
-      <footer class="site-footer"><div class="footer-grid"><div><strong>Docs</strong><span>Installation Instructions</span><span>Documentation</span><span>Podman CLI Commands</span></div><div><strong>Community</strong><span>Matrix</span><span>Discord</span><span>Blog</span></div><div><strong>Projects</strong><span>Podman GitHub</span><span>Podman Desktop</span><span>Podman Website GitHub</span></div></div><p class="footer-note">Proposed Podman backlog-fix state · Design reference only · No community action is performed.</p></footer>
+      <footer class="site-footer">
+        <div class="footer-grid">
+          <div><strong>Docs</strong><span>Installation Instructions</span><span>Documentation</span><span>Podman CLI Commands</span></div>
+          <div><strong>Community</strong><span>Matrix</span><span>Discord</span><span>Blog</span></div>
+          <div><strong>Projects</strong><span>Podman GitHub</span><span>Podman Desktop</span><span>Podman Website GitHub</span></div>
+        </div>
+        <p class="footer-note">Proposed Podman backlog-fix state · Design reference only · No community action is performed.</p>
+      </footer>
     </div>
   </body>
 </html>

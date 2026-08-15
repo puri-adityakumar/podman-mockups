@@ -11,62 +11,156 @@
   <body>
     <a class="skip-link" href="#main">Skip to article</a>
     <div class="site-shell">
-      <div class="proposal-bar"><span>Proposed design · LFX core · Not implemented</span><a href="index.html">Back to mockup gallery</a></div>
+      <div class="proposal-bar">
+        <span>Proposed design · LFX core · Not implemented</span>
+        <a href="index.html">Back to mockup gallery</a>
+      </div>
       <header class="podman-nav">
-        <a class="brand" href="index.html" aria-label="Podman mockup gallery"><img src="../../../podman.io/static/logos/optimized/podman-3-logo-266w-253h.webp" alt="" /><span>podman</span></a>
-        <nav class="nav-items" aria-label="Podman preview navigation"><span class="nav-item">Features</span><span class="nav-item">Get Started</span><span class="nav-item">Community</span><span class="nav-item active">Development Blog</span><span class="nav-item">Documentation</span><span class="nav-item">GitHub</span></nav>
+        <a class="brand" href="index.html" aria-label="Podman mockup gallery">
+          <img src="../../../podman.io/static/logos/optimized/podman-3-logo-266w-253h.webp" alt="" />
+          <span>podman</span>
+        </a>
+        <nav class="nav-items" aria-label="Podman preview navigation">
+          <a class="nav-item" href="#main">Features</a>
+          <a class="nav-item" href="#main">Get Started</a>
+          <a class="nav-item" href="#main">Community</a>
+          <a class="nav-item active" href="#main" aria-current="page">Development Blog</a>
+          <a class="nav-item" href="unified-docs.html">Documentation</a>
+          <a class="nav-item" href="#main">GitHub</a>
+        </nav>
         <span class="theme-toggle" aria-hidden="true">◐</span>
       </header>
 
       <main id="main" class="screen-content">
-        <div class="breadcrumb" aria-label="Breadcrumb"><span>Development Blog</span><span>Engineering</span><span>Article</span></div>
+        <div class="breadcrumb" aria-label="Breadcrumb">
+          <span>Development Blog</span>
+          <span>Engineering</span>
+          <span>Article</span>
+        </div>
         <article>
           <header class="article-hero">
             <div>
-              <div class="chips"><span class="scope-chip core">LFX core</span><span class="status-chip proposed">Proposed article style</span></div>
-              <p class="eyebrow" style="margin-top: 18px">Engineering · 8 min read</p>
-              <h1 style="font-size: clamp(2rem, 4vw, 3.7rem)">A clearer path from container idea to running workload</h1>
-              <p class="lede">A high-contrast article template with a focused reading width, predictable hierarchy, useful metadata, and scoped prose styles.</p>
-              <div class="meta-row"><span class="chip">August 2026</span><span class="chip">Podman community</span><span class="chip">Containers</span></div>
+              <div class="chips">
+                <span class="scope-chip core">LFX core</span>
+                <span class="status-chip proposed">Not implemented</span>
+              </div>
+              <p class="eyebrow eyebrow-after-chips">Engineering · 8 min read</p>
+              <h1 class="article-title">A clearer path from container idea to running workload</h1>
+              <p class="lede">
+                High-contrast long-form reading: one title, compact metadata, scoped prose, and
+                commands that stay distinct from navigation chrome.
+              </p>
+              <div class="meta-row">
+                <span class="chip">August 12, 2026</span>
+                <span class="chip">By community editors</span>
+                <span class="chip">Containers</span>
+              </div>
             </div>
-            <img src="../../../podman.io/static/images/article-thumb.png" alt="Illustrated Podman article thumbnail" />
+            <figure>
+              <img src="../../../podman.io/static/images/article-thumb.png" alt="Illustrated Podman article thumbnail" />
+              <figcaption class="figure-caption">Hero image stays optional. The title and lede remain readable without it.</figcaption>
+            </figure>
           </header>
 
           <div class="article-layout section">
             <div class="prose">
               <p class="eyebrow">Introduction</p>
               <h2>A readable default for long-form technical content</h2>
-              <p>Podman articles often combine explanation, commands, screenshots, links, and release details. This proposed template keeps those elements visually distinct while preserving one comfortable reading column.</p>
-              <p>Links use a darker, underlined blue that remains readable on white. The article title appears once, metadata is compact, and section headings form a consistent outline.</p>
+              <p>
+                Podman articles mix explanation, commands, screenshots, links, and release details.
+                This template keeps those pieces visually distinct in one comfortable reading column.
+              </p>
+              <p>
+                Links use a darker, underlined blue on white. The article title appears once.
+                Metadata stays compact. Headings form a predictable outline.
+              </p>
 
-              <blockquote class="pull-quote">The proposed blog style treats readability as a system: contrast, spacing, hierarchy, code, links, and navigation all work together.</blockquote>
+              <blockquote class="pull-quote">
+                Readability is a system: contrast, spacing, hierarchy, code, links, and navigation
+                work together.
+              </blockquote>
 
               <h2 id="workflow">Try the workflow</h2>
-              <p>A short setup section introduces the goal before showing commands. Supporting guidance remains close to the example instead of becoming a wall of notes.</p>
+              <p>State the goal first, then show the command. Notes stay next to the example.</p>
               <div class="code-block" role="img" aria-label="Example Podman command block">$ podman run --rm -p 8080:80 example/image
 
 Container started
 Open http://localhost:8080</div>
-              <p>Users can then follow a <a href="#next-steps">clearly styled next-step link</a> without losing their place in the article.</p>
+              <p>
+                Readers can then follow a
+                <a href="#next-steps">clearly styled next-step link</a>
+                without losing their place.
+              </p>
 
               <h2 id="details">Explain decisions, not only commands</h2>
-              <p>The prose section uses deliberate line length and vertical rhythm. Lists, captions, blockquotes, code, and links share the same scoped article rules, avoiding global styles that affect navigation controls.</p>
-              <ul><li>One visible H1 supplied by the article template.</li><li>Explicit description and social-card metadata.</li><li>Consistent heading levels and anchor targets.</li><li>High-contrast normal, hover, visited, and focus states.</li></ul>
+              <p>
+                Prose uses a deliberate measure and vertical rhythm. Lists, captions, quotes, code,
+                and links share scoped article rules so global site chrome is not restyled.
+              </p>
+              <ul>
+                <li>One visible H1 from the article template.</li>
+                <li>Explicit description and social-card metadata.</li>
+                <li>Consistent heading levels and in-page anchors.</li>
+                <li>High-contrast default, hover, visited, and focus states.</li>
+              </ul>
 
               <h2 id="next-steps">Next steps</h2>
-              <p>The article ends with related documentation, a release note, and one community action. Archive and current-blog ownership would still need maintainer confirmation before implementation.</p>
-              <div class="grid-2"><article class="card soft"><h3>Read the command reference</h3><p>Move from the tutorial into the authoritative CLI documentation.</p><button class="secondary" type="button">Open docs</button></article><article class="card soft"><h3>Join the discussion</h3><p>Bring questions to the relevant community channel or meeting.</p><button class="secondary" type="button">Community options</button></article></div>
+              <p>
+                End with one docs path, one community path, and an optional related article. Archive
+                vs current-blog ownership still needs maintainer confirmation.
+              </p>
+              <div class="grid-2">
+                <article class="card soft">
+                  <h3>Read the command reference</h3>
+                  <p>Move from the tutorial into authoritative CLI documentation.</p>
+                  <a class="button secondary" href="unified-docs.html">Open docs</a>
+                </article>
+                <article class="card soft">
+                  <h3>Join the discussion</h3>
+                  <p>Bring questions to chat or the next community meeting.</p>
+                  <a class="button secondary" href="backlog-fixes.html">Community options</a>
+                </article>
+              </div>
             </div>
 
             <aside class="side-panel" aria-label="Article information">
-              <section class="card blue-top"><h3>On this page</h3><div class="option-list"><div class="option-row" style="grid-template-columns: 1fr"><a href="#workflow">Try the workflow</a></div><div class="option-row" style="grid-template-columns: 1fr"><a href="#details">Explain decisions</a></div><div class="option-row" style="grid-template-columns: 1fr"><a href="#next-steps">Next steps</a></div></div></section>
-              <section class="card"><h3>Article details</h3><p><strong>Updated</strong><br />August 2026</p><p><strong>Reading time</strong><br />8 minutes</p><p><strong>Topics</strong><br />Containers · Workflow</p></section>
-              <section class="card soft"><h3>Share</h3><div class="actions"><button class="quiet" type="button">Copy link</button><button class="quiet" type="button">RSS</button></div></section>
+              <section class="card blue-top">
+                <h3>On this page</h3>
+                <nav class="toc-list" aria-label="Article sections">
+                  <a href="#workflow">Try the workflow</a>
+                  <a href="#details">Explain decisions</a>
+                  <a href="#next-steps">Next steps</a>
+                </nav>
+              </section>
+              <section class="card">
+                <h3>Article details</h3>
+                <p><strong>Published</strong><br />August 12, 2026</p>
+                <p><strong>Updated</strong><br />August 12, 2026</p>
+                <p><strong>Reading time</strong><br />8 minutes</p>
+                <p><strong>Topics</strong><br />Containers · Workflow</p>
+              </section>
+              <section class="card soft">
+                <h3>Share</h3>
+                <div class="share-field">
+                  <input readonly value="podman.io/blog/2026/08/clearer-path" aria-label="Proposed article URL" />
+                  <button class="quiet" type="button">Copy</button>
+                </div>
+                <div class="actions">
+                  <button class="quiet" type="button">RSS</button>
+                </div>
+              </section>
             </aside>
           </div>
         </article>
       </main>
-      <footer class="site-footer"><div class="footer-grid"><div><strong>Docs</strong><span>Installation Instructions</span><span>Documentation</span><span>Podman CLI Commands</span></div><div><strong>Community</strong><span>Matrix</span><span>Discord</span><span>Blog</span></div><div><strong>Projects</strong><span>Podman GitHub</span><span>Podman Desktop</span><span>Podman Website GitHub</span></div></div><p class="footer-note">Proposed Podman blog presentation · Design reference only · Current blog ownership must be confirmed.</p></footer>
+      <footer class="site-footer">
+        <div class="footer-grid">
+          <div><strong>Docs</strong><span>Installation Instructions</span><span>Documentation</span><span>Podman CLI Commands</span></div>
+          <div><strong>Community</strong><span>Matrix</span><span>Discord</span><span>Blog</span></div>
+          <div><strong>Projects</strong><span>Podman GitHub</span><span>Podman Desktop</span><span>Podman Website GitHub</span></div>
+        </div>
+        <p class="footer-note">Proposed Podman blog presentation · Design reference only · Current blog ownership must be confirmed.</p>
+      </footer>
     </div>
   </body>
 </html>

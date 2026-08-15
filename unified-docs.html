@@ -11,65 +11,199 @@
   <body>
     <a class="skip-link" href="#main">Skip to documentation</a>
     <div class="site-shell">
-      <div class="proposal-bar"><span>Proposed design · LFX bonus · Not implemented</span><a href="index.html">Back to mockup gallery</a></div>
+      <div class="proposal-bar">
+        <span>Proposed design · LFX bonus · Not implemented</span>
+        <a href="index.html">Back to mockup gallery</a>
+      </div>
       <header class="podman-nav">
-        <a class="brand" href="index.html" aria-label="Podman mockup gallery"><img src="../../../podman.io/static/logos/optimized/podman-3-logo-266w-253h.webp" alt="" /><span>podman</span></a>
-        <nav class="nav-items" aria-label="Podman preview navigation"><span class="nav-item">Features</span><span class="nav-item">Get Started</span><span class="nav-item">Community</span><span class="nav-item">Development Blog</span><span class="nav-item active">Documentation</span><span class="nav-item">GitHub</span></nav>
+        <a class="brand" href="index.html" aria-label="Podman mockup gallery">
+          <img src="../../../podman.io/static/logos/optimized/podman-3-logo-266w-253h.webp" alt="" />
+          <span>podman</span>
+        </a>
+        <nav class="nav-items" aria-label="Podman preview navigation">
+          <a class="nav-item" href="#main">Features</a>
+          <a class="nav-item" href="#main">Get Started</a>
+          <a class="nav-item" href="backlog-fixes.html">Community</a>
+          <a class="nav-item" href="blog-presentation.html">Development Blog</a>
+          <a class="nav-item active" href="#main" aria-current="page">Documentation</a>
+          <a class="nav-item" href="#main">GitHub</a>
+        </nav>
         <span class="theme-toggle" aria-hidden="true">◐</span>
       </header>
 
       <main id="main" class="screen-content">
+        <div class="breadcrumb" aria-label="Breadcrumb">
+          <span>Home</span>
+          <span>Documentation</span>
+        </div>
         <section class="hero-grid" aria-labelledby="docs-title">
           <div>
-            <div class="chips"><span class="scope-chip bonus">LFX bonus</span><span class="status-chip proposed">Discovery prototype</span></div>
-            <p class="eyebrow" style="margin-top: 18px">One documentation entry point</p>
+            <div class="chips">
+              <span class="scope-chip bonus">LFX bonus</span>
+              <span class="status-chip proposed">Not implemented</span>
+            </div>
+            <p class="eyebrow eyebrow-after-chips">One documentation entry point</p>
             <h1 id="docs-title">What do you want to do with Podman?</h1>
-            <p class="lede">A task-first discovery layer that can point to one canonical source while route ownership and migration are resolved.</p>
+            <p class="lede">
+              A task-first discovery layer that can point to one canonical source while route
+              ownership and migration are resolved.
+            </p>
           </div>
           <aside class="hero-panel">
-            <div class="field"><label for="docs-search">Search all Podman documentation</label><input id="docs-search" class="search-box" type="search" placeholder="Try “rootless networking” or “podman run”" /></div>
-            <div class="chips" style="margin-top: 14px"><span class="chip">Popular: installation</span><span class="chip">containers</span><span class="chip">Kubernetes</span></div>
+            <div class="field">
+              <label for="docs-search">Search all Podman documentation</label>
+              <input id="docs-search" class="search-box" type="search" value="podman run" aria-describedby="search-hint" />
+            </div>
+            <p class="fine-print" id="search-hint">Prototype results below. Search does not query a live index.</p>
+            <div class="chips chip-row">
+              <button class="chip" type="button">installation</button>
+              <button class="chip" type="button">containers</button>
+              <button class="chip" type="button">Kubernetes</button>
+            </div>
+            <div class="search-results" aria-label="Example search results">
+              <article class="search-hit">
+                <strong>podman run</strong>
+                <span>Command reference · flags, examples, exit codes</span>
+              </article>
+              <article class="search-hit">
+                <strong>Run your first container</strong>
+                <span>Get started · 10 min · beginner</span>
+              </article>
+              <article class="search-hit">
+                <strong>Rootless networking</strong>
+                <span>Guide · port publishing and pasta/slirp4netns</span>
+              </article>
+            </div>
           </aside>
         </section>
 
         <section class="section" aria-labelledby="tasks-title">
-          <div class="section-heading"><div><p class="eyebrow">Task-based entry points</p><h2 id="tasks-title">Start with your goal</h2><p>Landing cards explain where users are going and avoid duplicate quickstarts.</p></div><span class="status-chip proposed">Canonical source required</span></div>
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">Task-based entry points</p>
+              <h2 id="tasks-title">Start with your goal</h2>
+              <p>Landing cards say where they go. They do not duplicate a second quickstart.</p>
+            </div>
+            <span class="status-chip proposed">Canonical source required</span>
+          </div>
           <div class="grid-4">
-            <article class="card blue-top task-card"><div class="product-mark" aria-hidden="true">01</div><h3 style="margin-top: 14px">Install Podman</h3><p>Choose an OS, architecture, and supported installation path.</p><button type="button">Installation guide</button></article>
-            <article class="card blue-top task-card"><div class="product-mark" aria-hidden="true">02</div><h3 style="margin-top: 14px">Run a container</h3><p>Start, inspect, stop, and remove your first workload.</p><button class="secondary" type="button">Quickstart</button></article>
-            <article class="card blue-top task-card"><div class="product-mark" aria-hidden="true">03</div><h3 style="margin-top: 14px">Build an image</h3><p>Create and manage OCI images from a Containerfile.</p><button class="secondary" type="button">Image workflow</button></article>
-            <article class="card blue-top task-card"><div class="product-mark" aria-hidden="true">04</div><h3 style="margin-top: 14px">Use Kubernetes</h3><p>Generate, play, and debug Kubernetes-compatible YAML.</p><button class="secondary" type="button">Kubernetes guide</button></article>
+            <article class="card blue-top task-card">
+              <div class="product-mark" aria-hidden="true">01</div>
+              <h3 class="card-lead">Install Podman</h3>
+              <p>Choose OS, architecture, and a supported install path.</p>
+              <a class="button" href="downloads.html">Installation guide</a>
+            </article>
+            <article class="card blue-top task-card">
+              <div class="product-mark" aria-hidden="true">02</div>
+              <h3 class="card-lead">Run a container</h3>
+              <p>Start, inspect, stop, and remove your first workload.</p>
+              <a class="button secondary" href="#article-title">Quickstart</a>
+            </article>
+            <article class="card blue-top task-card">
+              <div class="product-mark" aria-hidden="true">03</div>
+              <h3 class="card-lead">Build an image</h3>
+              <p>Create and manage OCI images from a Containerfile.</p>
+              <button class="secondary" type="button">Image workflow</button>
+            </article>
+            <article class="card blue-top task-card">
+              <div class="product-mark" aria-hidden="true">04</div>
+              <h3 class="card-lead">Use Kubernetes</h3>
+              <p>Generate, play, and debug Kubernetes-compatible YAML.</p>
+              <button class="secondary" type="button">Kubernetes guide</button>
+            </article>
           </div>
         </section>
 
         <section class="section" aria-labelledby="article-title">
-          <div class="section-heading"><div><p class="eyebrow">Documentation frame</p><h2 id="article-title">Run your first container</h2><p>A single article frame for navigation, content, and local context.</p></div><div class="chips"><span class="status-chip ready">Canonical</span><span class="chip">Beginner</span><span class="chip">10 min</span></div></div>
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">Documentation frame</p>
+              <h2 id="article-title">Run your first container</h2>
+              <p>One article frame: section nav, content, and on-this-page context.</p>
+            </div>
+            <div class="chips">
+              <span class="status-chip ready">Canonical</span>
+              <span class="chip">Beginner</span>
+              <span class="chip">10 min</span>
+            </div>
+          </div>
           <div class="docs-layout">
-            <nav class="docs-nav" aria-label="Documentation sections"><strong>Podman documentation</strong><span>Overview</span><span class="active">Get started</span><span>Containers</span><span>Images</span><span>Networking</span><span>Storage</span><span>Kubernetes</span><span>Command reference</span></nav>
+            <nav class="docs-nav" aria-label="Documentation sections">
+              <strong>Podman documentation</strong>
+              <a href="#main">Overview</a>
+              <a class="active" href="#article-title" aria-current="page">Get started</a>
+              <a href="#start-container">Containers</a>
+              <a href="#main">Images</a>
+              <a href="#main">Networking</a>
+              <a href="#main">Storage</a>
+              <a href="#main">Kubernetes</a>
+              <a href="#main">Command reference</a>
+            </nav>
             <article class="prose">
-              <div class="breadcrumb" aria-label="Breadcrumb"><span>Docs</span><span>Get started</span><span>Run a container</span></div>
+              <div class="breadcrumb" aria-label="Article breadcrumb">
+                <span>Docs</span>
+                <span>Get started</span>
+                <span>Run a container</span>
+              </div>
               <h2>Run your first container</h2>
-              <p>This page explains the outcome, prerequisites, command, expected result, and next step without duplicating a separate landing-page tutorial.</p>
-              <div class="card soft"><h3>Before you begin</h3><p>Install Podman and confirm the command is available in your terminal.</p></div>
-              <h3 id="start-container" style="margin-top: 28px">1. Start a container</h3>
+              <p>Outcome, prerequisites, command, expected result, and next step — no second tutorial on a landing page.</p>
+              <div class="card soft">
+                <h3>Before you begin</h3>
+                <p>Install Podman and confirm the command is available in your terminal.</p>
+                <a class="button secondary" href="downloads.html">Go to downloads</a>
+              </div>
+              <h3 id="start-container" class="docs-step">1. Start a container</h3>
               <div class="code-block">$ podman run --rm quay.io/podman/hello</div>
-              <p>The output confirms that Podman pulled the image and started the container successfully.</p>
+              <p>The output confirms Podman pulled the image and started the container.</p>
               <h3 id="inspect-container">2. Inspect the result</h3>
               <div class="code-block">$ podman ps --all</div>
-              <p>The command reference remains one click away for flags and advanced use.</p>
-              <div class="grid-2" style="margin-top: 28px"><article class="card"><h3>Next: persistent containers</h3><p>Learn how names, ports, volumes, and restart behavior work.</p><button class="secondary" type="button">Continue</button></article><article class="card"><h3>Open command reference</h3><p>See the authoritative `podman run` options and examples.</p><button class="secondary" type="button">Reference</button></article></div>
+              <p>The command reference stays one click away for flags and advanced use.</p>
+              <div class="grid-2 docs-step">
+                <article class="card">
+                  <h3>Next: persistent containers</h3>
+                  <p>Names, ports, volumes, and restart behavior.</p>
+                  <button class="secondary" type="button">Continue</button>
+                </article>
+                <article class="card">
+                  <h3>Open command reference</h3>
+                  <p>Authoritative <code class="inline-code">podman run</code> options and examples.</p>
+                  <button class="secondary" type="button">Reference</button>
+                </article>
+              </div>
             </article>
-            <aside class="toc" aria-label="On this page"><strong>On this page</strong><span>Before you begin</span><span>Start a container</span><span>Inspect the result</span><span>Next steps</span></aside>
+            <aside class="toc" aria-label="On this page">
+              <strong>On this page</strong>
+              <a href="#article-title">Before you begin</a>
+              <a href="#start-container">Start a container</a>
+              <a href="#inspect-container">Inspect the result</a>
+              <a href="#inspect-container">Next steps</a>
+            </aside>
           </div>
         </section>
 
         <section class="section grid-3" aria-label="Documentation collections">
-          <article class="card soft"><h3>Guides</h3><p>Outcome-oriented workflows for learning and daily tasks.</p></article>
-          <article class="card soft"><h3>Reference</h3><p>Commands, configuration, APIs, and compatibility details.</p></article>
-          <article class="card soft"><h3>Troubleshooting</h3><p>Symptoms, diagnostics, known limits, and community help.</p></article>
+          <article class="card soft">
+            <h3>Guides</h3>
+            <p>Outcome-oriented workflows for learning and daily tasks.</p>
+          </article>
+          <article class="card soft">
+            <h3>Reference</h3>
+            <p>Commands, configuration, APIs, and compatibility details.</p>
+          </article>
+          <article class="card soft">
+            <h3>Troubleshooting</h3>
+            <p>Symptoms, diagnostics, known limits, and community help.</p>
+          </article>
         </section>
       </main>
-      <footer class="site-footer"><div class="footer-grid"><div><strong>Docs</strong><span>Installation Instructions</span><span>Documentation</span><span>Podman CLI Commands</span></div><div><strong>Community</strong><span>Matrix</span><span>Discord</span><span>Blog</span></div><div><strong>Projects</strong><span>Podman GitHub</span><span>Podman Desktop</span><span>Podman Website GitHub</span></div></div><p class="footer-note">Proposed unified Podman documentation discovery · Design reference only · Canonical ownership and migration remain decisions.</p></footer>
+      <footer class="site-footer">
+        <div class="footer-grid">
+          <div><strong>Docs</strong><span>Installation Instructions</span><span>Documentation</span><span>Podman CLI Commands</span></div>
+          <div><strong>Community</strong><span>Matrix</span><span>Discord</span><span>Blog</span></div>
+          <div><strong>Projects</strong><span>Podman GitHub</span><span>Podman Desktop</span><span>Podman Website GitHub</span></div>
+        </div>
+        <p class="footer-note">Proposed unified Podman documentation discovery · Design reference only · Canonical ownership and migration remain decisions.</p>
+      </footer>
     </div>
   </body>
 </html>

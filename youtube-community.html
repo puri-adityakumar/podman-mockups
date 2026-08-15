@@ -11,62 +11,181 @@
   <body>
     <a class="skip-link" href="#main">Skip to community videos</a>
     <div class="site-shell">
-      <div class="proposal-bar"><span>Proposed design · LFX bonus · Not implemented</span><a href="index.html">Back to mockup gallery</a></div>
+      <div class="proposal-bar">
+        <span>Proposed design · LFX bonus · Not implemented</span>
+        <a href="index.html">Back to mockup gallery</a>
+      </div>
       <header class="podman-nav">
-        <a class="brand" href="index.html" aria-label="Podman mockup gallery"><img src="../../../podman.io/static/logos/optimized/podman-3-logo-266w-253h.webp" alt="" /><span>podman</span></a>
-        <nav class="nav-items" aria-label="Podman preview navigation"><span class="nav-item">Features</span><span class="nav-item">Get Started</span><span class="nav-item active">Community</span><span class="nav-item">Development Blog</span><span class="nav-item">Documentation</span><span class="nav-item">GitHub</span></nav>
+        <a class="brand" href="index.html" aria-label="Podman mockup gallery">
+          <img src="../../../podman.io/static/logos/optimized/podman-3-logo-266w-253h.webp" alt="" />
+          <span>podman</span>
+        </a>
+        <nav class="nav-items" aria-label="Podman preview navigation">
+          <a class="nav-item" href="#main">Features</a>
+          <a class="nav-item" href="#main">Get Started</a>
+          <a class="nav-item active" href="#main" aria-current="page">Community</a>
+          <a class="nav-item" href="blog-presentation.html">Development Blog</a>
+          <a class="nav-item" href="unified-docs.html">Documentation</a>
+          <a class="nav-item" href="#main">GitHub</a>
+        </nav>
         <span class="theme-toggle" aria-hidden="true">◐</span>
       </header>
 
       <main id="main" class="screen-content">
+        <div class="breadcrumb" aria-label="Breadcrumb">
+          <span>Community</span>
+          <span>Videos</span>
+        </div>
         <section class="hero-grid" aria-labelledby="video-title">
           <div>
-            <div class="chips"><span class="scope-chip bonus">LFX bonus</span><span class="status-chip proposed">Proposed video hub</span></div>
-            <p class="eyebrow" style="margin-top: 18px">Community recordings</p>
+            <div class="chips">
+              <span class="scope-chip bonus">LFX bonus</span>
+              <span class="status-chip proposed">Not implemented</span>
+            </div>
+            <p class="eyebrow eyebrow-after-chips">Community recordings</p>
             <h1 id="video-title">Watch, learn, and join the conversation</h1>
-            <p class="lede">A single home for recent Podman videos, meeting recordings, chapters, transcripts, and the next way to participate.</p>
-            <div class="actions"><a class="button" href="#featured">Watch featured recording</a><a class="button secondary" href="#recent">Browse recent videos</a></div>
+            <p class="lede">
+              One home for recent videos, meeting recordings, chapters, and transcripts — powered by
+              the same metadata as the meeting permalink.
+            </p>
+            <div class="actions">
+              <a class="button" href="#featured">Watch featured recording</a>
+              <a class="button secondary" href="#recent">Browse recent videos</a>
+            </div>
           </div>
-          <aside class="hero-panel">
+          <aside class="hero-panel" aria-label="Video content model">
             <p class="eyebrow">Connected content model</p>
-            <div class="grid-2"><div class="stat"><strong>Meeting</strong><span>Date and type</span></div><div class="stat"><strong>Recording</strong><span>Video ID and URL</span></div><div class="stat"><strong>Chapters</strong><span>Timestamps and topics</span></div><div class="stat"><strong>Transcript</strong><span>Accessible text</span></div></div>
+            <div class="grid-2">
+              <div class="stat"><strong>Meeting</strong><span>Date, type, owners</span></div>
+              <div class="stat"><strong>Recording</strong><span>Video ID and URL</span></div>
+              <div class="stat"><strong>Chapters</strong><span>Timestamps and topics</span></div>
+              <div class="stat"><strong>Transcript</strong><span>Searchable text</span></div>
+            </div>
           </aside>
         </section>
 
         <section id="featured" class="section" aria-labelledby="featured-title">
-          <div class="section-heading"><div><p class="eyebrow">Featured recording</p><h2 id="featured-title">Latest Podman Community Meeting</h2><p>Generated from the same meeting metadata that powers the permalink and archive.</p></div><span class="status-chip recommended">Most recent</span></div>
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">Featured recording</p>
+              <h2 id="featured-title">Latest Podman Community Meeting</h2>
+              <p>Same August 4 record as the meeting permalink. One source, two surfaces.</p>
+            </div>
+            <span class="status-chip recommended">Most recent</span>
+          </div>
           <div class="video-layout">
             <div>
-              <div class="video-player" role="img" aria-label="Proposed featured Podman community video player"><span class="play" aria-hidden="true">▶</span></div>
-              <div class="video-caption"><span>August 4, 2026 · 60 minutes</span><span>Captions · Transcript · Meeting notes</span></div>
+              <div class="video-player" role="img" aria-label="Proposed featured Podman community video player">
+                <span class="play" aria-hidden="true">▶</span>
+              </div>
+              <div class="video-caption">
+                <span>August 4, 2026 · 60 minutes</span>
+                <span>Captions · Transcript · Meeting notes</span>
+              </div>
             </div>
             <aside class="card purple-top">
-              <div class="chips"><span class="chip">Community meeting</span><span class="status-chip ready">Transcript</span></div>
-              <h3 style="margin-top: 14px">Release planning and website updates</h3>
-              <p>Jump directly to the topic you need or open the complete shareable meeting page.</p>
-              <div class="chapter-item"><span class="chapter-time">08:20</span><span>Release status</span></div>
-              <div class="chapter-item"><span class="chapter-time">24:45</span><span>Website and docs</span></div>
-              <div class="chapter-item"><span class="chapter-time">48:10</span><span>Open floor</span></div>
-              <div class="actions"><button type="button">Open meeting page</button><button class="secondary" type="button">Read transcript</button></div>
+              <div class="chips">
+                <span class="chip">Community meeting</span>
+                <span class="status-chip ready">Transcript</span>
+              </div>
+              <h3 class="card-lead">Release planning and website updates</h3>
+              <p>Jump to a topic or open the shareable meeting page.</p>
+              <div class="chapter-item"><button class="jump-time" type="button">08:20</button><span>Release status</span></div>
+              <div class="chapter-item"><button class="jump-time" type="button">24:45</button><span>Website and docs</span></div>
+              <div class="chapter-item"><button class="jump-time" type="button">48:10</button><span>Open floor</span></div>
+              <div class="actions">
+                <a class="button" href="meeting-permalink.html">Open meeting page</a>
+                <button class="secondary" type="button">Read transcript</button>
+              </div>
             </aside>
           </div>
         </section>
 
         <section id="recent" class="section" aria-labelledby="recent-title">
-          <div class="section-heading"><div><p class="eyebrow">Recent videos</p><h2 id="recent-title">Continue watching</h2><p>Meeting recordings and focused demos share a consistent card and metadata pattern.</p></div><div class="segmented" aria-label="Video category preview"><button class="segment active" type="button">All</button><button class="segment" type="button">Meetings</button><button class="segment" type="button">Demos</button></div></div>
-          <div class="grid-3">
-            <article class="card blue-top"><div class="video-player" style="aspect-ratio: 16 / 8" role="img" aria-label="Proposed meeting video thumbnail"><span class="play" style="width: 48px; height: 48px; font-size: 1rem" aria-hidden="true">▶</span></div><div class="chips" style="margin-top: 14px"><span class="chip">Meeting</span><span class="chip">52 min</span></div><h3 style="margin-top: 12px">Testing and documentation</h3><p>July 21, 2026</p><button class="secondary" type="button">Watch recording</button></article>
-            <article class="card blue-top"><div class="video-player" style="aspect-ratio: 16 / 8" role="img" aria-label="Proposed feature demo thumbnail"><span class="play" style="width: 48px; height: 48px; font-size: 1rem" aria-hidden="true">▶</span></div><div class="chips" style="margin-top: 14px"><span class="chip">Demo</span><span class="chip">4 min</span></div><h3 style="margin-top: 12px">Rootless containers explained</h3><p>Short technical walkthrough</p><button class="secondary" type="button">Watch demo</button></article>
-            <article class="card blue-top"><div class="video-player" style="aspect-ratio: 16 / 8" role="img" aria-label="Proposed community update thumbnail"><span class="play" style="width: 48px; height: 48px; font-size: 1rem" aria-hidden="true">▶</span></div><div class="chips" style="margin-top: 14px"><span class="chip">Update</span><span class="chip">7 min</span></div><h3 style="margin-top: 12px">What shipped this month</h3><p>Community release summary</p><button class="secondary" type="button">Watch update</button></article>
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">Recent videos</p>
+              <h2 id="recent-title">Continue watching</h2>
+              <p>Meetings and short demos share one card pattern: type, duration, date, action.</p>
+            </div>
+            <div class="segmented" id="video-filter" aria-label="Video category">
+              <button class="segment active" type="button" data-filter="all">All</button>
+              <button class="segment" type="button" data-filter="meeting">Meetings</button>
+              <button class="segment" type="button" data-filter="demo">Demos</button>
+            </div>
+          </div>
+          <div class="grid-3" id="video-grid">
+            <article class="card blue-top" data-kind="meeting">
+              <div class="video-player video-thumb" role="img" aria-label="Meeting video thumbnail">
+                <span class="play" aria-hidden="true">▶</span>
+              </div>
+              <div class="chips chip-row"><span class="chip">Meeting</span><span class="chip">52 min</span></div>
+              <h3 class="card-lead">Testing and documentation</h3>
+              <p>July 21, 2026</p>
+              <a class="button secondary" href="meeting-permalink.html">Watch recording</a>
+            </article>
+            <article class="card blue-top" data-kind="demo">
+              <div class="video-player video-thumb" role="img" aria-label="Feature demo thumbnail">
+                <span class="play" aria-hidden="true">▶</span>
+              </div>
+              <div class="chips chip-row"><span class="chip">Demo</span><span class="chip">4 min</span></div>
+              <h3 class="card-lead">Rootless containers explained</h3>
+              <p>Short technical walkthrough</p>
+              <button class="secondary" type="button">Watch demo</button>
+            </article>
+            <article class="card blue-top" data-kind="demo">
+              <div class="video-player video-thumb" role="img" aria-label="Community update thumbnail">
+                <span class="play" aria-hidden="true">▶</span>
+              </div>
+              <div class="chips chip-row"><span class="chip">Update</span><span class="chip">7 min</span></div>
+              <h3 class="card-lead">What shipped this month</h3>
+              <p>Community release summary</p>
+              <button class="secondary" type="button">Watch update</button>
+            </article>
           </div>
         </section>
 
         <section class="section grid-2" aria-label="Video participation calls to action">
-          <article class="card soft"><p class="eyebrow">Go deeper</p><h2>Browse the Podman channel</h2><p>Use the external channel for playlists and older recordings while the site curates current content.</p><button type="button">Open YouTube channel</button></article>
-          <article class="card soft"><p class="eyebrow">Take part</p><h2>Join the next meeting</h2><p>Move from watching to the calendar, agenda, participation guidance, and community chat.</p><button class="secondary" type="button">View community calendar</button></article>
+          <article class="card soft">
+            <p class="eyebrow">Go deeper</p>
+            <h2>Browse the Podman channel</h2>
+            <p>Playlists and older recordings stay on YouTube. This page curates what is current.</p>
+            <button type="button">Open YouTube channel</button>
+          </article>
+          <article class="card soft">
+            <p class="eyebrow">Take part</p>
+            <h2>Join the next meeting</h2>
+            <p>Move from watching to calendar, agenda, and community chat.</p>
+            <a class="button secondary" href="backlog-fixes.html">View community calendar</a>
+          </article>
         </section>
       </main>
-      <footer class="site-footer"><div class="footer-grid"><div><strong>Docs</strong><span>Installation Instructions</span><span>Documentation</span><span>Podman CLI Commands</span></div><div><strong>Community</strong><span>Matrix</span><span>Discord</span><span>Blog</span></div><div><strong>Projects</strong><span>Podman GitHub</span><span>Podman Desktop</span><span>Podman Website GitHub</span></div></div><p class="footer-note">Proposed Podman community-video integration · Design reference only · No media is embedded or played.</p></footer>
+      <footer class="site-footer">
+        <div class="footer-grid">
+          <div><strong>Docs</strong><span>Installation Instructions</span><span>Documentation</span><span>Podman CLI Commands</span></div>
+          <div><strong>Community</strong><span>Matrix</span><span>Discord</span><span>Blog</span></div>
+          <div><strong>Projects</strong><span>Podman GitHub</span><span>Podman Desktop</span><span>Podman Website GitHub</span></div>
+        </div>
+        <p class="footer-note">Proposed Podman community-video integration · Design reference only · No media is embedded or played.</p>
+      </footer>
     </div>
+    <script>
+      (function () {
+        var buttons = document.querySelectorAll("#video-filter .segment");
+        var cards = document.querySelectorAll("#video-grid [data-kind]");
+        buttons.forEach(function (button) {
+          button.addEventListener("click", function () {
+            var filter = button.getAttribute("data-filter");
+            buttons.forEach(function (item) {
+              item.classList.toggle("active", item === button);
+            });
+            cards.forEach(function (card) {
+              var show = filter === "all" || card.getAttribute("data-kind") === filter;
+              card.hidden = !show;
+            });
+          });
+        });
+      })();
+    </script>
   </body>
 </html>
