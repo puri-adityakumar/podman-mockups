@@ -1,0 +1,181 @@
+/* Portfolio — design system ported from focus-landing (src/components/waitlist/theme.module.css)
+   Pure monochrome: near-black ink on white paper. Serif display + mono body.
+   Hairlines, uppercase micro-labels, tiered widths. Print-first (A4). */
+
+:root {
+  --ink: #0a0a0a;
+  --ink-soft: #3a3a38;
+  --muted: #8a8880;
+  --paper: #ffffff;
+  --slot: #f4f2ec;
+  --faint: #ece9e0;
+  --hairline: #e2dfd6;
+
+  --font-display: "Montserrat", "Helvetica Neue", Arial, sans-serif;
+  --font-body: "Montserrat", "Helvetica Neue", Arial, sans-serif;
+
+  --column: 640px;
+  --content: 1080px;
+  --pad-x: clamp(20px, 5vw, 64px);
+  --space-section: clamp(40px, 6vw, 72px);
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+html, body { background: var(--paper); color: var(--ink); }
+
+body {
+  font-family: var(--font-body);
+  font-size: 13px;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ---------- Type ---------- */
+h1, h2 { font-family: var(--font-display); font-weight: 700; letter-spacing: -0.03em; }
+h1 { font-size: clamp(44px, 7vw, 68px); line-height: 1.05; }
+h2 { font-size: clamp(28px, 4vw, 40px); line-height: 1.1; }
+.subhead { font-family: var(--font-display); font-weight: 700; font-size: clamp(16px, 2vw, 20px); line-height: 1.4; color: var(--ink); }
+.case-kicker { font-family: var(--font-display); font-weight: 700; font-size: clamp(20px, 2.6vw, 26px); letter-spacing: -0.01em; }
+
+.label {
+  font-size: 11px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.muted { color: var(--muted); }
+.mono { font-family: var(--font-body); }
+.body { color: var(--ink-soft); font-size: 13px; line-height: 1.7; }
+.lede { color: var(--ink-soft); font-size: 14px; line-height: 1.7; max-width: 72ch; }
+.link { color: var(--ink); text-decoration: underline; text-underline-offset: 3px; }
+a { color: var(--ink); text-decoration: underline; text-underline-offset: 3px; }
+.mono a, .contact-grid a { color: var(--ink); text-decoration: underline; text-underline-offset: 3px; }
+
+/* ---------- Page scaffolding (print: one .page ≈ one A4) ---------- */
+.page {
+  max-width: var(--content);
+  margin: 0 auto;
+  padding: var(--space-section) var(--pad-x);
+  border-bottom: 1px solid var(--hairline);
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+.page:last-child { border-bottom: none; }
+
+/* ---------- Cover ---------- */
+.cover { justify-content: flex-start; gap: 0; }
+.topline, .sec-head { display: flex; flex-direction: column; gap: 10px; }
+.topline { flex-direction: row; justify-content: space-between; }
+.cover-mid {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin: clamp(28px, 5vh, 56px) 0 clamp(24px, 4vh, 44px);
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 20px 32px;
+}
+.contact-grid p:first-child { margin-bottom: 4px; }
+
+/* ---------- Figures ---------- */
+.shot {
+  border: 1px solid var(--hairline);
+  background: var(--slot);
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.shot img { display: block; width: 100%; height: auto; }
+.shot figcaption { padding: 2px 4px 4px; }
+.shot.small img { max-height: 380px; object-fit: cover; object-position: top; }
+
+.shot.placeholder {
+  min-height: 260px;
+  align-items: center;
+  justify-content: center;
+  border-style: dashed;
+  background:
+    repeating-linear-gradient(45deg, transparent 0 12px, var(--faint) 12px 13px),
+    var(--slot);
+}
+
+/* ---------- Stats / columns / principles ---------- */
+.stat-row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 1px;
+  background: var(--hairline);
+  border: 1px solid var(--hairline);
+}
+.stat { background: var(--paper); padding: 18px 16px; display: flex; flex-direction: column; gap: 6px; }
+.stat strong { font-family: var(--font-display); font-size: 30px; font-weight: 700; }
+
+.twocol { display: grid; grid-template-columns: 1fr 1fr; gap: 32px; }
+.twocol .label, .principles .label { display: block; margin-bottom: 8px; }
+
+.principles { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+.principle { border-top: 1px solid var(--ink); padding-top: 12px; }
+
+.duo { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
+.duo .shot img { aspect-ratio: 16 / 10; object-fit: cover; object-position: top; }
+
+/* ---------- Projects ---------- */
+.project {
+  display: grid;
+  grid-template-columns: 2.2fr 1fr;
+  gap: 30px;
+  align-items: center;
+}
+.project .shot { padding: 6px; }
+.project-meta { display: flex; flex-direction: column; gap: 14px; }
+.project-meta .label { font-size: 12px; }
+.project-meta .body { font-size: 15px; line-height: 1.6; }
+.project .placeholder { min-height: 220px; }
+
+/* ---------- Closing ---------- */
+.closing { display: flex; flex-direction: column; gap: 18px; }
+.closing-head { max-width: 18ch; }
+.thanks { margin-top: 8px; font-size: 20px; font-weight: 700; letter-spacing: 0.04em; color: var(--ink); }
+
+/* ---------- Print → PDF ---------- */
+@page { size: A4; margin: 0; }
+@media print {
+  body { font-size: 11px; }
+  .page {
+    break-after: page;
+    border-bottom: none;
+    min-height: 0;
+    padding: 14mm 16mm;
+    max-width: none;
+    gap: 18px;
+  }
+  .cover,
+  .page:last-child {
+    min-height: 297mm;
+  }
+  .page:last-child { break-after: auto; }
+  .cover-foot { margin-top: auto; }
+  .shot, .stat-row, .project, .principle { break-inside: avoid; }
+  .shot img { max-height: 92mm; object-fit: cover; object-position: top; }
+  .duo .shot img { max-height: 58mm; }
+  .project .shot img { max-height: 52mm; }
+  .shot.placeholder { min-height: 90mm; }
+  a { color: var(--ink); text-decoration: underline; }
+}
+
+/* TLDR note under cover contact grid */
+.tldr-note {
+  font-family: var(--font-body);
+  font-size: 15px;
+  line-height: 1.6;
+  margin-top: 18px;
+  padding-top: 14px;
+  border-top: 1px solid var(--hairline);
+}
+.tldr-note a { color: var(--ink); }
