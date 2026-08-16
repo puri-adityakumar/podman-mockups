@@ -144,28 +144,81 @@ a { color: var(--ink); text-decoration: underline; text-underline-offset: 3px; }
 .thanks { margin-top: 8px; font-size: 20px; font-weight: 700; letter-spacing: 0.04em; color: var(--ink); }
 
 /* ---------- Print → PDF ---------- */
-@page { size: A4; margin: 0; }
+@page { size: A4; margin: 10mm 12mm; }
 @media print {
   body { font-size: 11px; }
+
   .page {
-    break-after: page;
+    /* Continuous flow — no forced full-page sections (avoids empty cover + mid-cuts) */
+    break-after: auto;
+    break-before: auto;
     border-bottom: none;
-    min-height: 0;
-    padding: 14mm 16mm;
+    min-height: 0 !important;
+    height: auto !important;
+    padding: 0 0 10mm;
     max-width: none;
+    gap: 12px;
+  }
+  .page + .page {
+    border-top: 1px solid var(--hairline);
+    padding-top: 8mm;
+  }
+
+  /* Compact cover: no full-page stretch / no footer pinned to bottom */
+  .cover {
+    min-height: 0 !important;
+    justify-content: flex-start;
     gap: 18px;
+    padding-bottom: 8mm;
   }
-  .cover,
-  .page:last-child {
-    min-height: 297mm;
+  .cover-mid {
+    margin: 12px 0 8px;
   }
-  .page:last-child { break-after: auto; }
-  .cover-foot { margin-top: auto; }
-  .shot, .stat-row, .project, .principle { break-inside: avoid; }
-  .shot img { max-height: 92mm; object-fit: cover; object-position: top; }
-  .duo .shot img { max-height: 58mm; }
-  .project .shot img { max-height: 52mm; }
-  .shot.placeholder { min-height: 90mm; }
+  .cover-foot {
+    margin-top: 0;
+  }
+  .tldr-note {
+    margin-top: 12px;
+    padding-top: 10px;
+  }
+  .closing {
+    break-before: avoid;
+    padding-top: 6mm;
+  }
+
+  /* Keep atomic blocks on one page; avoid mid-figure cuts */
+  .shot,
+  .stat-row,
+  .project,
+  .principle,
+  .duo,
+  .twocol,
+  .sec-head,
+  .contact-grid {
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+  figcaption {
+    break-before: avoid;
+    page-break-before: avoid;
+  }
+
+  /* Show full screenshots (no crop) and size them to fit the page */
+  .shot img,
+  .duo .shot img,
+  .project .shot img,
+  .shot.small img {
+    max-height: 78mm;
+    width: 100%;
+    height: auto;
+    aspect-ratio: auto;
+    object-fit: contain;
+    object-position: top;
+  }
+  .duo .shot img { max-height: 52mm; }
+  .project .shot img { max-height: 46mm; }
+  .shot.placeholder { min-height: 0; }
+
   a { color: var(--ink); text-decoration: underline; }
 }
 
